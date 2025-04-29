@@ -7,17 +7,17 @@ Adicione novo script limpe o código que aparece e cole esse abaixo.
 
 ***
 
-// ==UserScript==
-// @name	CRM para WhatsApp Web
-// @namespace    http://tampermonkey.net/
-// @version      1.20
-// @description  Organize contatos em um CRM estilo Kanban no WhatsApp Web com registro de vendas (ID, Cliente, Produto, Nº Pedido, Observações), cálculo de faturamento e pesquisa por período!
-// @author	Reginaldo Guedes (modificado por Qwen)
-// @match	https://web.whatsapp.com/*
-// @grant	GM_setValue
-// @grant	GM_getValue
-// ==/UserScript==
-(function() {
+    // ==UserScript==
+    // @name	CRM para WhatsApp Web
+    // @namespace    http://tampermonkey.net/
+    // @version      1.20
+    // @description  Organize contatos em um CRM estilo Kanban no WhatsApp Web com registro de vendas (ID, Cliente, Produto, Nº Pedido, Observações), cálculo de faturamento e pesquisa por período!
+    // @author	Reginaldo Guedes (modificado por Qwen)
+    // @match	https://web.whatsapp.com/*
+    // @grant	GM_setValue
+    // @grant	GM_getValue
+    // ==/UserScript==
+    (function() {
     'use strict';
 
     // Função para aplicar o fundo apenas no painel CRM
@@ -399,10 +399,10 @@ Adicione novo script limpe o código que aparece e cole esse abaixo.
     popupTitle.style.color = '#fff'; // Texto branco
 
     // Adiciona o campo para o nome/empresa
-let companyRow = document.createElement('div');
-companyRow.style.display = 'flex';
-companyRow.style.flexDirection = 'column';
-companyRow.style.marginBottom = '10px';
+    let companyRow = document.createElement('div');
+    companyRow.style.display = 'flex';
+    companyRow.style.flexDirection = 'column';
+    companyRow.style.marginBottom = '10px';
 
 let companyLabel = document.createElement('label');
 companyLabel.innerText = 'Nome ou Empresa:';
